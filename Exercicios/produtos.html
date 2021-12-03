@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel=stylesheet href=produtos.css>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="produtos.js"></script>
+
+<body> 
+    <div>
+        <h1>Itens para comprar.</h1>
+    </div>
+    <div>
+        <input type="text" placeholder="Item" id="item"></input><br>
+    </div>            
+    <div>
+        <input type="text" placeholder="Marca" id="brand"></input><br>
+    </div>
+    <div>
+        <input type="text" placeholder="Quantidade" id="amount"></input><br>
+    </div>
+    <div>
+        <h3>Qual forma de pagameto $.</h3>
+    </div>
+    <div>
+        <input type="checkbox" id="paymentsCard">Cartão de crédito/débito.</input><br>
+    </div>
+    <div>
+        <input type="checkbox" id="paymentsMoney">Dinheiro.</input><br>
+    </div>
+    <div>
+    <button onclick = "addNewProduct()">Clique para salvar.</button>
+    </div>
+</body>
+
+</html>

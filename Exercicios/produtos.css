@@ -1,0 +1,28 @@
+*{
+    
+    background-color: silver;
+}
+h1{
+    color: red;
+    justify-content: center;
+}
+h3{
+    color: green;
+}
+button{
+    margin-bottom: 10px; 
+    color: blue;
+}
+input{
+    color: blue;
+}
+::placeholder{
+    color: red;
+}
+body{
+    text-align: center;
+}
+div{
+    border: black;
+
+}
