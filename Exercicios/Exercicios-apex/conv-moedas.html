@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moedas</title>
+</head>
+<body>
+    <script>
+        ///choose which currency to convert
+        const chooseShip = window.prompt(`
+        *Digite '1' para converte de REAL para DOLAR. 
+        *Digite '2' para converter de DOLAR para REAL.
+        *Digite '3' para converter de REAL para EURO.
+        *Digite '4' para converter de EURO para REAL.`)
+        ///perform the calculation
+        switch (chooseShip) {
+            case '1':
+                ///prompt for value to convert
+                let realDolar = parseFloat(window.prompt('Digite quatos REAIS você deseja converter para DOLARES.'))
+                let shipResult = (realDolar / 5.70).toFixed(2)
+                alert('Você tem um total de: '+shipResult+" US$.")
+                break;
+            case '2':
+                ///prompt for value to convert
+                let dolarReal = parseFloat(window.prompt('Digite quatos DOLARES você deseja converter para REAIS.'))
+                let shipResult1 = (dolarReal * 5.70).toFixed(2)
+                alert('Você tem um total de: '+shipResult1+" R$.")
+                break;
+            case '3':
+                ///prompt for value to convert
+                let realEuro = parseFloat(window.prompt('Digite quatos REAIS você deseja converter para EURO.'))
+                let shipResult2 = (realEuro / 6.40 ).toFixed(2)
+                alert('Você tem um total de: '+shipResult2+" R$.")
+                break;
+            case '4':
+                ///prompt for value to convert
+                let euroReal = parseFloat(window.prompt('Digite quatos EUROS você deseja converter para REAIS.'))
+                let shipResult3 = (euroReal * 6.40 ).toFixed(2)
+                alert('Você tem um total de: '+shipResult3+" €.")
+                break;
+            default:
+                alert("Recarregue a página e digite um valor valido!")
+        }
+
+        
+    
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
