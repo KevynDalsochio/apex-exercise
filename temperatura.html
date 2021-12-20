@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+<Script>
+
+    const temperature = window.prompt("digite a unidade que vamos converter!!")
+    let temperatureUserInput = parseFloat(window.prompt('digite a temperatura')).toFixed(2)
+    
+  switch (temperature) {
+        case 'Celsius':
+        let resultConver1 = (temperatureUserInput * 1.8)+32
+          alert(resultConver1+' F°')
+        break
+
+        case 'Fahrenheit':
+        let resultConver2 = (temperatureUserInput - 32)/1.8
+          alert(resultConver2+' C°')
+        break
+
+      default:
+          alert('digite uma unidade validade')
+          break
+  }
+
+
+
+
+
+
+
+
+</Script>
+
+
+
+
+
+    
+</body>
+</html>

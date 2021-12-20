@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        ///request the values
+        const initialValue = parseInt(window.prompt('digite um numero'))
+        const finalValue = parseInt(window.prompt('digite outro numero'))
+        let evenNumber = 0
+        let oddNmber = 0 
+        ///run through the chain of numbers
+       for (let i = initialValue; i <= finalValue; i++) {
+        ///check how many are even and odd  
+            if (i % 2 === 0) {
+               evenNumber++
+           }else {
+               oddNmber++
+           }}document.write( ` ${evenNumber} são pares <br> ${oddNmber} são impares`)
+    </script>
+</body>
+</html>
